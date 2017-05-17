@@ -1,5 +1,15 @@
+.navigation li {
+  padding: 0 30px 0 0;
+}
+.navigation li a:hover {
+  border-bottom: 1px solid #000;
+  padding-bottom: 3px;
+  transition: all 0.2s linear;
+}
+
+
 /* Main class */
-.navbar-wagon {
+.navbar-fuya {
   box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
   background: white;
   transition: all 0.3s ease;
@@ -25,10 +35,12 @@
 }
 
 /* Navbar right section (with form, links, button) */
-.navbar-wagon-right {
+.navbar-right {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-weight: 400;
+  letter-spacing: 0.1em;
 }
 
 /* Navbar item */

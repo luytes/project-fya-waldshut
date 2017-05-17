@@ -1,0 +1,53 @@
+<div class="navbar-fuya">
+  <!-- Logo -->
+  <div class="fuya-icon">
+    <%= link_to root_path, class: "navbar-wagon-brand" do %>
+      <%= image_tag "fuya.jpg" %>
+    <% end %>
+  </div>
+  <!-- Right Navigation -->
+  <div class="navbar-right hidden-xs hidden-sm">
+
+    <ul class="list-inline no-marg-bot navigation">
+      <li class="space-right">
+        <a href="#news">NEWS</a>
+      </li>
+      <li class="space-right">
+        <a href="#menu">MENU</a>
+      </li>
+      <li class="space-right">
+        <a href="#reservation">RESERVATION</a>
+      </li>
+      <li class="space-right">
+        <a href="#gallery">GALLERY</a>
+      </li>
+      <li class="space-right">
+        <a href="#contact">CONTACT</a>
+      </li>
+    </ul>
+
+
+    <!-- Search form -->
+   <!--  <form action="" class="navbar-wagon-search">
+      <input type="text" class="navbar-wagon-search-input" placeholder="Search something">
+      <button type="submit" class="navbar-wagon-search-btn">
+        <i class="fa fa-search"></i>
+      </button>
+    </form> -->
+
+      <!-- Profile picture and dropdown -->
+  </div>
+
+  <!-- Dropdown list appearing on mobile only -->
+  <div class="navbar-wagon-item hidden-md hidden-lg">
+    <div class="dropdown">
+      <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
+      <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+        <li><a href="#">Some mobile link</a></li>
+        <li><a href="#">Other one</a></li>
+        <li><a href="#">Other one</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
