@@ -1,4 +1,9 @@
-/* -------------------------------------
- * CSS code specific to home page
- * (margin/padding adjustments)
- * ------------------------------------- */
+.about-content {
+  background-color: black;
+  color: white;
+  line-height: 1.5em;
+  font-weight: 300;
+  p {
+    padding: 0 0 0.938em 0;
+  }
+}
