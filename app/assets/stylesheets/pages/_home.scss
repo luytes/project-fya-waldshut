@@ -24,6 +24,8 @@
 }
 .menu-button {
   font-size: 16px;
+  text-decoration: none;
+  letter-spacing: 0.05em;
   font-weight: 500;
   color: white;
   margin: 25px auto;
@@ -36,4 +38,37 @@
 .menu-button:hover {
   background-color: white;
   color: black;
+}
+.news {
+  h2 {
+    padding-bottom: 1.25em;
+    letter-spacing: 0.05em;
+    margin: 0;
+    font-family: $my-font;
+  }
+}
+.news-content-left {
+  font-weight: 300;
+  h3 {
+    font-size: 2em;
+    padding-bottom: 1em;
+  }
+  .news-date {
+    padding: 10px 10% 20px 10%;
+    font-size: 1em;
+    color: lightgray;
+    text-align: left;
+  }
+  .news-detail {
+    font-size: 0.875em;
+    line-height: 1.6em;
+    padding: 0 10%;
+    text-align: left;
+  }
+}
+.news-content {
+  width: 80%;
+}
+.news-content-right img {
+  border-radius: 3px;
 }

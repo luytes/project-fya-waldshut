@@ -1,6 +1,6 @@
 <div class="container-fluid no-pad">
 
-  <div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.3) 0%, rgba(0,36,61,0.3) 50%), url('<%= asset_path('papa.jpg') %>')">
+  <div class="banner" style="background-image: url('<%= asset_path('papa.jpg') %>')">
     <div class="banner-content">
       <h2>FUYA</h2>
       <p>Running Sushi and more...</p>
@@ -8,56 +8,104 @@
   </div>
 
   <!-- About us -->
-  <div class="about-content padded">
+  <div class="container-fluid bg-black padded">
+    <div class="row">
+      <div class="about-content">
+        <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 text-center">
+          <h2 class="upcase">Über uns</h2>
+          <p>
+            Bei uns im Fuya Waldshut verwöhnen wir Sie mit authentischen chinesischen und japanischen Spezialitäten. Schauen Sie unseren Meisterköchen am Wok über die Schulter, seien Sie hautnah dabei, wenn die handgezogenen Nudeln, die Ramen, kunstvoll zubereitet werden und genießen Sie unsere Sushi-Spezialitäten auch am Laufband!
+          </p>
+
+          <p>
+            Direkt am Bahnhof Waldshut begrüßen wir Sie mit einem reichhaltigen Angebot an frischen Speisen und exzellentem Service. Genießen Sie in eleganter Atmosphäre oder feiern Sie mit bis zu 140 Gästen.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Menu -->
+  <div class="container-fluid bg-black space-bot-1">
+    <div class="row">
+      <div class="menu pos-relative">
+        <div class="lunch-menu">
+          <div class="col-xs-12 col-sm-6 col-m-6 col-l-6 text-center no-pad">
+            <%= image_tag 'fuya1.jpg', class: "bg-picture full-picture menu-picture" %>
+            <div class="menu-button upcase">
+              Mittagsmenü
+            </div>
+          </div>
+        </div>
+        <div class="dinner-menu">
+          <div class="col-xs-12 col-sm-6 col-m-6 col-l-6 text-center no-pad">
+            <%= image_tag 'fuya2.jpg', class: "bg-picture full-picture menu-picture" %>
+            <div class="menu-button upcase">
+              Ala Card
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- News Banner -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="news">
+        <div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.5) 50%), url('<%= asset_path('fuya3.jpg') %>')">
+          <div class="banner-content">
+            <h2 class="upcase">Neuigkeiten</h2>
+            <p>Bleiben Sie auf dem neuesten Stand!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- News Content -->
+  <div class="container-fluid padded">
+    <div class="row">
+      <div class="news-content">
+        <div class="col-xs-12 col-sm-7 col-m-7 col-l-7">
+          <div class="news-content-left">
+            <h3>1.August ist fuya offen z.b.</h3>
+            <div class="news-date">
+              <!-- Insert Date in here -->
+              01/08/2017
+            </div>
+            <div class="news-detail">
+              <!-- Insert Detail here -->
+              liebe g'ste fuya is offen daknfglkangck,angjfkangfjlangilcangrjlangrhjcagl
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-5 col-m-5 col-l-5">
+          <div class="news-content-right">
+            <%= image_tag 'fuya4.jpg' %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-fluid">
     <div class="row">
       <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 text-center">
-        <h2 class="upcase">Über uns</h2>
-        <p>
-          Bei uns im Fuya Waldshut verwöhnen wir Sie mit authentischen chinesischen und japanischen Spezialitäten. Schauen Sie unseren Meisterköchen am Wok über die Schulter, seien Sie hautnah dabei, wenn die handgezogenen Nudeln, die Ramen, kunstvoll zubereitet werden und genießen Sie unsere Sushi-Spezialitäten auch am Laufband!
-        </p>
+        <div class="about-content">
+          <h3>Über uns</h3>
 
-        <p>
-          Direkt am Bahnhof Waldshut begrüßen wir Sie mit einem reichhaltigen Angebot an frischen Speisen und exzellentem Service. Genießen Sie in eleganter Atmosphäre oder feiern Sie mit bis zu 140 Gästen.
-        </p>
-      </div>
-    </div>
-  </div>
+          <h1>Running Sushi</h1>
 
-  <div class="menu pos-relative">
-    <div class="row">
-      <div class="lunch-menu">
-        <div class="col-xs-12 col-sm-6 col-m-6 col-l-6 text-center no-pad">
-          <%= image_tag 'fuya1.jpg', class: "bg-picture full-picture menu-picture" %>
-          <div class="menu-button">
-            Mittagsmenü
-          </div>
+          <p>All you can eat vom Fließband!</p>
+
+          <p>
+            Neben vielfältigen Sushi-Spezialitäten erwartet Sie auf unserem Laufband-Buffet eine umfangreiche Auswahl an warmen und kalten Köstlichkeiten: Von Ente über Nudeln bis hin zu hausgemachten Desserts fährt alles in vielen kleinen Schlemmerportionen direkt an Ihrem Tisch vorbei. Sie brauchen nur zuzugreifen!
+
+            Von Montag bis Sonntag (Dienstag Ruhetag) ab 18 Uhr für nur 21 EUR pro Person. Für Kinder unter sechs Jahren nur 8,- EUR und unter zwölf Jahren nur 12,80 EUR.
+          </p>
         </div>
-      </div>
-      <div class="dinner-menu">
-        <div class="col-xs-12 col-sm-6 col-m-6 col-l-6 text-center no-pad">
-          <%= image_tag 'fuya2.jpg', class: "bg-picture full-picture menu-picture" %>
-          <div class="menu-button">
-            Ala Card
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 text-center">
-      <div class="about-content">
-        <h3>Über uns</h3>
-
-        <h1>Running Sushi</h1>
-
-        <p>All you can eat vom Fließband!</p>
-
-        <p>
-          Neben vielfältigen Sushi-Spezialitäten erwartet Sie auf unserem Laufband-Buffet eine umfangreiche Auswahl an warmen und kalten Köstlichkeiten: Von Ente über Nudeln bis hin zu hausgemachten Desserts fährt alles in vielen kleinen Schlemmerportionen direkt an Ihrem Tisch vorbei. Sie brauchen nur zuzugreifen!
-
-          Von Montag bis Sonntag (Dienstag Ruhetag) ab 18 Uhr für nur 21 EUR pro Person. Für Kinder unter sechs Jahren nur 8,- EUR und unter zwölf Jahren nur 12,80 EUR.
-        </p>
       </div>
     </div>
   </div>
