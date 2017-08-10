@@ -1,4 +1,74 @@
-/* -------------------------------------
- * CSS code specific to home page
- * (margin/padding adjustments)
- * ------------------------------------- */
+.about-content {
+  background-color: black;
+  color: white;
+  font-weight: 300;
+  h2 {
+    padding-bottom: 1.25em;
+    letter-spacing: 0.05em;
+    margin: 0;
+    font-family: $my-font;
+  }
+  p {
+    padding: 0 0 0.938em 0;
+    margin: 0;
+    line-height: 1.55em;
+    font-size: 1.25em;
+  }
+}
+.menu {
+  background-color: black;
+  padding-bottom: 6.25em;
+}
+.menu-picture {
+  height: 420px;
+}
+.menu-button {
+  font-size: 16px;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  font-weight: 500;
+  color: white;
+  margin: 25px auto;
+  width: 200px;
+  padding: 0.625em 2.5em;
+  border: 2px solid white;
+  border-radius: 50px;
+  transition: 0.3s all ease-in-out;
+}
+.menu-button:hover {
+  background-color: white;
+  color: black;
+}
+.news {
+  h2 {
+    padding-bottom: 1.25em;
+    letter-spacing: 0.05em;
+    margin: 0;
+    font-family: $my-font;
+  }
+}
+.news-content-left {
+  font-weight: 300;
+  h3 {
+    font-size: 2em;
+    padding-bottom: 1em;
+  }
+  .news-date {
+    padding: 10px 10% 20px 10%;
+    font-size: 1em;
+    color: lightgray;
+    text-align: left;
+  }
+  .news-detail {
+    font-size: 0.875em;
+    line-height: 1.6em;
+    padding: 0 10%;
+    text-align: left;
+  }
+}
+.news-content {
+  width: 80%;
+}
+.news-content-right img {
+  border-radius: 3px;
+}

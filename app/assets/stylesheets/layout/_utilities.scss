@@ -6,15 +6,17 @@
 
 // Paddings
 .padded {
-  padding-top: 5em;
-  padding-bottom: 5em;
+  padding-top: 6em;
+  padding-bottom: 6em;
+}
+.no-pad {
+  padding: 0;
 }
 .space-right {
   padding-right: 30px;
-  a {
-    text-decoration: none;
-    color: black;
-  }
+}
+.space-bot-1 {
+  padding-bottom: 4em;
 }
 // Margins
 .no-marg-bot {
@@ -22,8 +24,13 @@
 }
 
 // Backgrounds
+.bg-picture {
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 .bg-black {
-  background: #4a4a4a;
+  background: black;
 }
 .bg-grey {
   background: #aeaeae;
@@ -33,4 +40,17 @@
 }
 .bg-dark-blue {
   background: #3b5998;
+}
+.full-picture {
+  width: 100%;
+}
+.upcase {
+  text-transform: uppercase;
+}
+// Positions
+.pos-absolute {
+  position: absolute;
+}
+.pos-relative {
+  position: relative;
 }
