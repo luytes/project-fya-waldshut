@@ -4,12 +4,12 @@
 
 // Local fonts (uncomment following lines)
 @font-face {
-  font-family: "Senoubi Gothic Regular";
-  src: url(/assets/Senobi-Gothic-Regular.ttf) format("truetype");
-  src: font-url('FontFile.eot');
-  src: font-url('FontFile.eot?#iefix') format('embedded-opentype'),
-       font-url('FontFile.woff') format('woff'),
-       font-url('FontFile.ttf') format('truetype')
+  font-family: 'Senoubi Gothic Regular';
+  src: font-url('Senobi-Gothic-Regular.ttf') format("truetype");
+  // src: font-url('FontFile.eot');
+  // src: font-url('FontFile.eot?#iefix') format('embedded-opentype'),
+  //      font-url('FontFile.woff') format('woff'),
+  //      font-url('FontFile.ttf') format('truetype')
 }
 $my-font: "Senoubi Gothic Regular";
 

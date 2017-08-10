@@ -6,8 +6,8 @@
 
 // Paddings
 .padded {
-  padding-top: 6.25em;
-  padding-bottom: 6.25em;
+  padding-top: 6em;
+  padding-bottom: 6em;
 }
 .no-pad {
   padding: 0;
@@ -21,6 +21,11 @@
 }
 
 // Backgrounds
+.bg-picture{
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 .bg-black {
   background: #4a4a4a;
 }
@@ -33,6 +38,16 @@
 .bg-dark-blue {
   background: #3b5998;
 }
+.full-picture {
+  width: 100%;
+}
 .upcase {
   text-transform: uppercase;
+}
+// Positions
+.pos-absolute {
+  position: absolute;
+}
+.pos-relative {
+  position: relative;
 }

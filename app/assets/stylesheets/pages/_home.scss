@@ -3,9 +3,10 @@
   color: white;
   font-weight: 300;
   h2 {
-    padding-bottom: 1.875em;
+    padding-bottom: 1.25em;
     letter-spacing: 0.05em;
     margin: 0;
+    font-family: $my-font;
   }
   p {
     padding: 0 0 0.938em 0;
@@ -13,4 +14,21 @@
     line-height: 1.55em;
     font-size: 1.25em;
   }
+}
+.menu {
+  background-color: black;
+  padding-bottom: 11.25em;
+}
+.menu-picture {
+  height: 420px;
+}
+.menu-button {
+  color: white;
+  border: 1px solid white;
+  border-radius: 50%;
+  transition: 0.4s all ease-in-out;
+}
+.menu-button:hover {
+  background-color: white;
+  color: black;
 }
