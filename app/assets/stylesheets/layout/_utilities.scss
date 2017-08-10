@@ -9,6 +9,9 @@
   padding-top: 6.25em;
   padding-bottom: 6.25em;
 }
+.no-pad {
+  padding: 0;
+}
 .space-right {
   padding-right: 30px;
 }
@@ -29,4 +32,7 @@
 }
 .bg-dark-blue {
   background: #3b5998;
+}
+.upcase {
+  text-transform: uppercase;
 }

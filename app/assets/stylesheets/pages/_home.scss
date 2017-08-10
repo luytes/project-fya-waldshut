@@ -1,9 +1,16 @@
 .about-content {
   background-color: black;
   color: white;
-  line-height: 1.5em;
   font-weight: 300;
+  h2 {
+    padding-bottom: 1.875em;
+    letter-spacing: 0.05em;
+    margin: 0;
+  }
   p {
     padding: 0 0 0.938em 0;
+    margin: 0;
+    line-height: 1.55em;
+    font-size: 1.25em;
   }
 }
