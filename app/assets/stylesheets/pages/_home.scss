@@ -50,6 +50,7 @@
 .news-content-left {
   font-weight: 300;
   h3 {
+    margin: 0;
     font-size: 2em;
     padding: 0 5% 1em 5%;
     font-weight: 300;
@@ -80,4 +81,27 @@
   background-size: cover !important;
   background-repeat: no-repeat;
   background-position: center;
+}
+.opening-hours {
+  margin: 0 120px;
+  font-size: 1.125em;
+  h3 {
+    margin: 0;
+    font-size: 1.6em;
+    padding: 0 5% 1em 5%;
+    font-weight: 300;
+  }
+  .opening-header {
+    font-weight: 300;
+  }
+  .opening-detail {
+    line-height: 1.875em;
+    padding: 0 5%;
+    text-align: left;
+  }
+  .opening-subheader {
+    color: lightcoral;
+    text-align: left;
+    padding: 10px 5% 5px 5%;
+  }
 }
