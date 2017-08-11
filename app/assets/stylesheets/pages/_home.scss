@@ -51,24 +51,33 @@
   font-weight: 300;
   h3 {
     font-size: 2em;
-    padding-bottom: 1em;
+    padding: 0 5% 1em 5%;
+    font-weight: 300;
   }
   .news-date {
-    padding: 10px 10% 20px 10%;
+    padding: 10px 5% 20px 5%;
     font-size: 1em;
-    color: lightgray;
+    color: lightcoral;
     text-align: left;
   }
   .news-detail {
     font-size: 0.875em;
     line-height: 1.6em;
-    padding: 0 10%;
+    padding: 0 5%;
     text-align: left;
   }
 }
 .news-content {
-  width: 80%;
+  margin: 0 150px;
 }
 .news-content-right img {
   border-radius: 3px;
+}
+.news-picture {
+  height: 350px;
+  width: 100%;
+  border-radius: 3px;
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  background-position: center;
 }
