@@ -88,7 +88,7 @@
   h3 {
     margin: 0;
     font-size: 1.6em;
-    padding: 0 5% 1em 5%;
+    padding: 0 5% 0.5em 5%;
     font-weight: 300;
   }
   .opening-header {
@@ -103,5 +103,28 @@
     color: lightcoral;
     text-align: left;
     padding: 10px 5% 5px 5%;
+  }
+}
+.reservation {
+  margin: 0 120px;
+  font-size: 1.125em;
+  font-weight: 300;
+  h3 {
+    margin: 0;
+    font-size: 1.6em;
+    padding: 0 5% 0.5em 5%;
+    font-weight: 300;
+  }
+  .reservation-detail {
+    line-height: 1.875em;
+    padding: 0 5%;
+    text-align: left;
+    p {
+      font-size: 0.875em;
+      padding-top: 3.125em;
+    }
+    span {
+      color: lightcoral;
+    }
   }
 }
