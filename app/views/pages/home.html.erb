@@ -31,15 +31,15 @@
       <div class="menu pos-relative">
         <div class="lunch-menu">
           <div class="col-xs-12 col-sm-6 col-m-6 col-l-6 text-center no-pad">
-            <%= image_tag 'fuya1.jpg', class: "bg-picture full-picture menu-picture" %>
+            <%= image_tag 'fuya5.jpg', class: "bg-picture full-picture menu-picture" %>
             <div class="menu-button upcase">
-              Mittagsmenü
+              Running Sushi
             </div>
           </div>
         </div>
         <div class="dinner-menu">
           <div class="col-xs-12 col-sm-6 col-m-6 col-l-6 text-center no-pad">
-            <%= image_tag 'fuya2.jpg', class: "bg-picture full-picture menu-picture" %>
+            <%= image_tag 'fuya6.jpg', class: "bg-picture full-picture menu-picture" %>
             <div class="menu-button upcase">
               Ala Card
             </div>
@@ -64,25 +64,112 @@
   </div>
 
   <!-- News Content -->
-  <div class="container-fluid padded">
+  <div class="container-fluid padded-2">
     <div class="row">
       <div class="news-content">
         <div class="col-xs-12 col-sm-7 col-m-7 col-l-7">
           <div class="news-content-left">
-            <h3>1.August ist fuya offen z.b.</h3>
+            <h3 class="upcase">Hier kommt deine nachricht</h3>
             <div class="news-date">
               <!-- Insert Date in here -->
               01/08/2017
             </div>
             <div class="news-detail">
               <!-- Insert Detail here -->
-              liebe g'ste fuya is offen daknfglkangck,angjfkangfjlangilcangrjlangrhjcagl
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
             </div>
           </div>
         </div>
-        <div class="col-xs-12 col-sm-5 col-m-5 col-l-5">
+        <div class="col-xs-12 col-sm-5 col-m-5 col-l-5 no-pad">
           <div class="news-content-right">
-            <%= image_tag 'fuya4.jpg' %>
+            <div class="news-picture" style="background-image: url('<%= asset_path('fuya4.jpg') %>')"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Running Sushi -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="news">
+        <div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.5) 50%), url('<%= asset_path('fuya5.jpg') %>')">
+          <div class="banner-content">
+            <h2 class="upcase">Running Sushi</h2>
+            <p>All you can eat vom Fließband!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Öffnungszeiten -->
+  <div class="container-fluid padded">
+    <div class="row">
+      <div class="opening-hours">
+        <div class="col-xs-12 col-sm-6 col-m-6 col-l-6">
+          <div class="opening-header">
+            <h3 class="upcase">ÖFFNUNGSZEITEN</h3>
+            <div class="opening-subheader">
+              <!-- Insert Day here -->
+              Mo - So
+            </div>
+            <div class="opening-detail">
+              <!-- Insert Detail here -->
+              11:30 – 14:30 / 17:30 – 22:30
+            </div>
+            <div class="opening-subheader">
+              <!-- Insert Day here -->
+              Dienstag
+            </div>
+            <div class="opening-detail">
+              <!-- Insert Detail here -->
+              geschlossen
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-m-6 col-l-6">
+          <div class="opening-header">
+            <h3 class="upcase">an feiertagen</h3>
+            <div class="opening-subheader">
+              <!-- Insert Day here -->
+              24. Dez
+            </div>
+            <div class="opening-detail">
+              <!-- Insert Detail here -->
+              geschlossen
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Reservation -->
+  <div class="container-fluid padded">
+    <div class="row">
+      <div class="reservation">
+        <div class="col-xs-12 col-sm-6 col-m-6 col-l-6" id="reservation">
+          <div class="reservation-header">
+            <h3>telefonische Reservierung</h3>
+            <div class="reservation-detail">
+              <!-- Insert Detail here -->
+              Bitte rufen Sie uns an unter +49 (0)7751 8962680 <br>
+              zu den folgenden Zeiten: <br>
+              täglich: 11:30 – 22:30 <br>
+              <p>Reservierungen per E-Mail können leider nicht berücksichtigt werden. <br>
+              <span>Rufen Sie uns an, wenn Sie sich verspäten! Die Reservierung verfällt andernfalls nach 15 Minuten</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-m-6 col-l-6">
+          <div class="reservation-header">
+            <h3>Online Reservierung</h3>
+            <div class="reservation-detail">
+              <!-- Insert Detail here -->
+              Online-Reservierungen sind zur Zeit bei uns leider nicht möglich.
+              Bitte rufen Sie uns telefonisch an um einen Tisch zu reservieren.
+            </div>
           </div>
         </div>
       </div>
@@ -94,8 +181,6 @@
     <div class="row">
       <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 text-center">
         <div class="about-content">
-          <h3>Über uns</h3>
-
           <h1>Running Sushi</h1>
 
           <p>All you can eat vom Fließband!</p>
@@ -137,46 +222,5 @@
       </p>
     </div>
   </div>
-
-  <div class="row">
-    <div class="col-xs-12 col-sm-4 col-sm-offset-2 col-md-3 col-md-offset-3 text-center">
-      <h3>Öffnungszeiten</h1>
-      <p>zeit</p>
-    </div>
-    <div class="col-xs-12 col-sm-4 col-md-3 text-center">
-      <h3>An Feiertagen</h3>
-      <p>chemi</p>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 text-center" id="menu">
-      <h1>MENU</h1>
-
-      <p>
-        chemi maybe 2 tables
-      </p>
-
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 text-center" id="reservation">
-      <h1>Reservierung</h1>
-
-      <p>
-        Möchten Sie gerne einen Tisch an unserem Laufband?
-        Rufen Sie uns unter +49 (0)7751 8962680 zwischen 11:30 - 14:30 und 17:30 - 22:30
-        an um einen Tisch zu reservieren.
-      </p>
-      <p>
-        Reservierungen sind nur telefonisch möglich! Reservierungen per E-Mail können leider nicht berücksichtigt werden.
-        Hinweis zur Tischreservierung: Rufen Sie uns an, wenn Sie sich verspäten! Die Reservierung verfällt andernfalls nach 15 Minuten.
-      </p>
-
-    </div>
-  </div>
-
-
 
 </div>

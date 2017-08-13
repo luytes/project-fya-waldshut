@@ -29,7 +29,7 @@
   font-weight: 500;
   color: white;
   margin: 25px auto;
-  width: 200px;
+  width: 230px;
   padding: 0.625em 2.5em;
   border: 2px solid white;
   border-radius: 50px;
@@ -50,25 +50,81 @@
 .news-content-left {
   font-weight: 300;
   h3 {
+    margin: 0;
     font-size: 2em;
-    padding-bottom: 1em;
+    padding: 0 5% 0.5em 5%;
+    font-weight: 300;
   }
   .news-date {
-    padding: 10px 10% 20px 10%;
+    padding: 10px 5% 20px 5%;
     font-size: 1em;
-    color: lightgray;
+    color: lightcoral;
     text-align: left;
   }
   .news-detail {
     font-size: 0.875em;
-    line-height: 1.6em;
-    padding: 0 10%;
+    line-height: 1.8em;
+    padding: 0 5%;
     text-align: left;
   }
 }
 .news-content {
-  width: 80%;
+  margin: 0 150px;
 }
 .news-content-right img {
   border-radius: 3px;
+}
+.news-picture {
+  height: 350px;
+  width: 100%;
+  border-radius: 3px;
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.opening-hours {
+  margin: 0 120px;
+  font-size: 1.125em;
+  h3 {
+    margin: 0;
+    font-size: 1.6em;
+    padding: 0 5% 0.5em 5%;
+    font-weight: 300;
+  }
+  .opening-header {
+    font-weight: 300;
+  }
+  .opening-detail {
+    line-height: 1.875em;
+    padding: 0 5%;
+    text-align: left;
+  }
+  .opening-subheader {
+    color: lightcoral;
+    text-align: left;
+    padding: 10px 5% 5px 5%;
+  }
+}
+.reservation {
+  margin: 0 120px;
+  font-size: 1.125em;
+  font-weight: 300;
+  h3 {
+    margin: 0;
+    font-size: 1.6em;
+    padding: 0 5% 0.5em 5%;
+    font-weight: 300;
+  }
+  .reservation-detail {
+    line-height: 1.875em;
+    padding: 0 5%;
+    text-align: left;
+    p {
+      font-size: 0.875em;
+      padding-top: 3.125em;
+    }
+    span {
+      color: lightcoral;
+    }
+  }
 }
