@@ -12,7 +12,12 @@
   border-bottom: 1px solid black;
   padding-bottom: 3px;
 }
-
+.navbar-link-white {
+  color: white !important;
+}
+.navbar-link-white:hover {
+  color: #999999 !important;
+}
 
 /* Main class */
 .navbar-fuya {
@@ -24,15 +29,16 @@
   padding: 0px 30px;
   align-items: center;
   justify-content: space-between;
-}
 
-/* Optional class to fix the navbar on top */
-.navbar-wagon-fixed {
   position: fixed;
   left: 0px;
   top: 0px;
-  z-index: 1;
+  z-index: 50;
   width: 100%;
+}
+.navbar-trans {
+  background-color: transparent !important;
+  box-shadow: none !important;
 }
 
 /* Navbar logo */
