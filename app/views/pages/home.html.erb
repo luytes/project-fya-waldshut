@@ -1,11 +1,11 @@
 <div class="container-fluid no-pad">
-
-  <div class="banner" style="background-image: url('<%= asset_path('papa.jpg') %>')">
+  <div class="banner" id="change_color" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.35) 50%), url('<%= asset_path('fuya_banner1.jpg') %>')">
     <div class="banner-content">
       <h2>FUYA</h2>
       <p>Running Sushi and more...</p>
     </div>
   </div>
+</div>
 
   <!-- About us -->
   <div class="container-fluid bg-black padded">
@@ -32,16 +32,16 @@
         <div class="lunch-menu">
           <div class="col-xs-12 col-sm-6 col-m-6 col-l-6 text-center no-pad">
             <%= image_tag 'fuya5.jpg', class: "bg-picture full-picture menu-picture" %>
-            <div class="menu-button upcase">
-              Running Sushi
+            <div type="button" class="menu-button upcase" data-toggle="modal" data-target="#running">
+              Running
             </div>
           </div>
         </div>
         <div class="dinner-menu">
           <div class="col-xs-12 col-sm-6 col-m-6 col-l-6 text-center no-pad">
-            <%= image_tag 'fuya6.jpg', class: "bg-picture full-picture menu-picture" %>
-            <div class="menu-button upcase">
-              Ala Card
+            <%= image_tag 'fuya7.jpg', class: "bg-picture full-picture menu-picture" %>
+            <div type="button" class="menu-button upcase" data-toggle="modal" data-target="#sushi">
+              Sushi
             </div>
           </div>
         </div>
@@ -64,7 +64,7 @@
   </div>
 
   <!-- News Content -->
-  <div class="container-fluid padded-2">
+  <div class="container-fluid padded-2" id="news">
     <div class="row">
       <div class="news-content">
         <div class="col-xs-12 col-sm-7 col-m-7 col-l-7">
@@ -158,7 +158,7 @@
               zu den folgenden Zeiten: <br>
               täglich: 11:30 – 22:30 <br>
               <p>Reservierungen per E-Mail können leider nicht berücksichtigt werden. <br>
-              <span>Rufen Sie uns an, wenn Sie sich verspäten! Die Reservierung verfällt andernfalls nach 15 Minuten</span></p>
+              <span>Rufen Sie uns an, wenn Sie sich verspäten! Die Reservierung verfällt andernfalls nach 15 Minuten.</span></p>
             </div>
           </div>
         </div>
@@ -176,51 +176,56 @@
     </div>
   </div>
 
+<!-- Modals -->
+<div class="modal fade" id="running" tabindex="-1" role="dialog" aria-labelledby="Runninglabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="Runninglabel">All you can eat vom Laufband!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Neben vielfältigen Sushi-Spezialitäten erwartet Sie auf unserem Laufband-Buffet eine umfangreiche Auswahl an warmen und kalten Köstlichkeiten: Von Ente über Nudeln bis hin zu hausgemachten Desserts fährt alles in vielen kleinen Schlemmerportionen direkt an Ihrem Tisch vorbei. Sie brauchen nur zuzugreifen! <br>
 
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 text-center">
-        <div class="about-content">
-          <h1>Running Sushi</h1>
-
-          <p>All you can eat vom Fließband!</p>
-
-          <p>
-            Neben vielfältigen Sushi-Spezialitäten erwartet Sie auf unserem Laufband-Buffet eine umfangreiche Auswahl an warmen und kalten Köstlichkeiten: Von Ente über Nudeln bis hin zu hausgemachten Desserts fährt alles in vielen kleinen Schlemmerportionen direkt an Ihrem Tisch vorbei. Sie brauchen nur zuzugreifen!
-
-            Von Montag bis Sonntag (Dienstag Ruhetag) ab 18 Uhr für nur 21 EUR pro Person. Für Kinder unter sechs Jahren nur 8,- EUR und unter zwölf Jahren nur 12,80 EUR.
-          </p>
-        </div>
+        Von Montag bis Sonntag (Dienstag Ruhetag) ab 18 Uhr für nur 21 EUR pro Person. Für Kinder unter sechs Jahren nur 8,- EUR und unter zwölf Jahren nur 12,80 EUR.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
-
-  <div class="row">
-    <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 text-center">
-      <h1>Sushi</h1>
-
-      <p>
-        Von japanischen Kochprofis frisch zubereitet genießen Sie bei uns eine Vielfalt feinster Sushi-Kreationen. Probieren Sie unsere klassischen Maki- oder Futomaki-Sushi, dünne Hosomaki auch mal mit Gemüse, edle Nigiri oder unsere feinsten Sashimi.
-      </p>
-
-      <p>
-        Alle unsere Spezialitäten erhalten Sie à la carte und ab 18 Uhr zusätzlich auch am Laufband-Buffet.
-      </p>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 text-center">
-      <h1>Asia NEINNEINENIENNONONONONONO WE DONT SERVE RAMEN</h1>
-
-      <p>
-        Erleben Sie außergewöhnliche japanische und chinesische Köstlichkeiten. Ramen z.B. gehört in der japanischen Esskultur zu den wichtigsten Gerichten.
-      </p>
-
-      <p>
-        Unsere Meisterköchen ziehen vor Ihren Augen diese asiatische Nudelspezialität von Hand und servieren Ihnen diese in vielfältigen Suppenvariationen. Sie werden begeistert sein!
-      </p>
-    </div>
-  </div>
-
 </div>
+
+<div class="modal fade" id="sushi" tabindex="-1" role="dialog" aria-labelledby="SushiLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="SushiLabel">All you can eat vom Laufband!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Von japanischen Kochprofis frisch zubereitet genießen Sie bei uns eine Vielfalt feinster Sushi-Kreationen. Probieren Sie unsere klassischen Maki- oder Futomaki-Sushi, dünne Hosomaki auch mal mit Gemüse, edle Nigiri oder unsere feinsten Sashimi. <br>
+        Alle unsere Spezialitäten erhalten Sie à la carte und ab 18 Uhr zusätzlich auch am Laufband-Buffet. <br>
+        Erleben Sie außergewöhnliche japanische und chinesische Köstlichkeiten.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%= content_for(:after_js) do %>
+  <script>
+    var scroll_start = 0;
+    var change_color = $('#change_color');
+    if (change_color.length) {
+      $(document).scroll(updateNavStyle);
+      updateNavStyle(); // Note this.
+    }
+  </script>
+<% end %>
