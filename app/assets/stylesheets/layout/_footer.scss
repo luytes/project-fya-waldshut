@@ -28,6 +28,7 @@
   float: left;
   a {
     line-height: 1.875em;
+    margin-bottom: 1em;
     float: left;
     color: white;
     transition: all 0.3s ease-in-out;
@@ -38,7 +39,7 @@
   text-decoration: underline;
 }
 .gen-footer-header {
-  margin-bottom: 1.25em;
+  margin-bottom: 1em;
   span {
     color: white;
     height: 20px;
@@ -46,6 +47,33 @@
     font-size: 1em;
     font-weight: 600;
     letter-spacing: 0.063em;
-    padding-right: 6.875em;
+    // padding-right: 6.875em;
   }
+}
+.gen-footer-detail {
+  margin-bottom: 1em;
+  font-size: 0.875em;
+  font-weight: 500;
+}
+.footer-column {
+  color: white;
+  letter-spacing: 0.063em;
+  text-align: left;
+}
+.footer-content {
+  font-size: 0.875em;
+  font-weight: 500;
+  p {
+    margin: 0;
+  }
+}
+.footer-subheader {
+  padding-bottom: 0.5em;
+}
+.footer-detail {
+  padding-bottom: 0.5em;
+}
+.footer-copyright {
+  padding-top: 6em;
+  font-size: 0.875em;
 }
